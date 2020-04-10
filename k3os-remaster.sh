@@ -35,7 +35,7 @@ cp -rfp /mnt/orig/k3os /mnt/new/
 
 # create new grub.cfg
 #cp /mnt/orig/boot/grub/grub.cfg /mnt/new/boot/grub/
-cp -p data/grub-fai1.cfg /mnt/new/boot/grub/grub.cfg
+cp -p data/grub-fai2.cfg /mnt/new/boot/grub/grub.cfg
 
 ################
 
