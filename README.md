@@ -7,6 +7,15 @@ all inside the KVM based open-source virtualization platform [Proxmox VE 6.1][4]
 
 ## 1st Part: install K3os on a Proxmox VM
 
+We want to create a virtual machine (VM) using the KVM hypervisor of Proxmox, without using any manual steps.
+In oder to accomplish this, we need a customized version of the K3os ISO image, 
+that does not ask any questions during  installation.
+This remastered ISO image needs to be created only once for each new version of K3os.
+With [`cloud-init`][5], it is possible to inject unique configuration data (aka `config.yaml`) 
+into the fully automatic installation process of a K3os VM.
+So for each K3os instance, that we want to create, a separate `cloud-init` CDROM (ISO image) needs to built.
+
+
 ### Preparations
 
 - remaster the K3OS ISO image: adapt `/boot/grub/grub.cfg` for fully automatic installation
@@ -15,7 +24,7 @@ k3os-remaster.sh /path/to/k3os-091-amd64.iso
 ```
 - copy the remastered ISO `new-k3os-091-amd64.iso` to the image store of the Proxmox VE server
 - create a customized `cloud-init` CDROM, using https://github.com/pagong/cloudinit-for-k3os
-- please adapt the `config.yaml` file (aka `user-data`) for your environment:
+- please adapt the `user-data` file (aka `config.yaml`) for your environment:
   - at least `hostname`, `password` for user `rancher` and the `ssh` keys should be changed
 ```
 k3os-build.sh K3os-091-c
@@ -34,6 +43,7 @@ k3os-build.sh K3os-091-c
 
 ### Explore the K3os operating system
 
+- refer to Rancher Labs' [Github repo][2] for documentation on installing and running K3os
 - after the reboot, you can login to the VM as user `rancher` with the preconfigured credentials
 - have a look around:
 ```
@@ -47,7 +57,6 @@ kubectl get nodes -o wide
 kubectl get all -A
 ```
 - use `sudo -i` to become user `root`
-- refer to the [github repo][2] for documentation on installing and running K3os.
 
 
 ## 2nd Part: install containerized Jitsi Meet on K3os
@@ -58,4 +67,5 @@ kubectl get all -A
 [2]: https://github.com/rancher/k3os
 [3]: https://github.com/rancher/k3s
 [4]: https://www.proxmox.com/en/proxmox-ve
+[5]: https://cloudinit.readthedocs.io/en/latest/
 
