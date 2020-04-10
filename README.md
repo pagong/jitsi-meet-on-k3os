@@ -8,12 +8,15 @@ all inside the KVM based open-source virtualization platform [Proxmox VE 6.1][4]
 ## 1st Part: install K3os on a Proxmox VM
 
 We want to create a virtual machine (VM) using the KVM hypervisor of Proxmox, without using any manual steps.
+
 In oder to accomplish this, we need a customized version of the K3os ISO image, 
-that does not ask any questions during  installation.
+that does not ask any questions during installation.
 This remastered ISO image needs to be created only once for each new version of K3os.
 With [`cloud-init`][5], it is possible to inject unique configuration data (aka `config.yaml`) 
 into the fully automatic installation process of a K3os VM.
 So for each K3os instance, that we want to create, a separate `cloud-init` CDROM (ISO image) needs to built.
+
+Refer to Rancher Labs' [Github repo][2] for documentation on installing and running K3os.
 
 
 ### Preparations
@@ -43,7 +46,6 @@ k3os-build.sh K3os-091-c
 
 ### Explore the K3os operating system
 
-- refer to Rancher Labs' [Github repo][2] for documentation on installing and running K3os
 - after the reboot, you can login to the VM as user `rancher` with the preconfigured credentials
 - have a look around:
 ```
@@ -56,7 +58,7 @@ df -h; date
 kubectl get nodes -o wide
 kubectl get all -A
 ```
-- use `sudo -i` to become user `root`
+- use `sudo -i` to become user `root` and explore the unique features of K3os :smile:
 
 
 ## 2nd Part: install containerized Jitsi Meet on K3os
