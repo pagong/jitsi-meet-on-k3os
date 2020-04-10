@@ -46,6 +46,9 @@ df -h; date
 kubectl get nodes -o wide
 kubectl get all -A
 ```
+- use `sudo -i` to become user `root`
+- refer to the [github repo][2] for documentation on installing and running K3os.
+
 
 ## 2nd Part: install containerized Jitsi Meet on K3os
 
