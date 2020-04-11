@@ -1,7 +1,7 @@
 # Jitsi Meet on K3os
 
-Scripts and tools to accomplish automated installations of [Jitsi Meet][1] with [k3os][2],
-Rancher Labs' tiny Kubernetes distribution [k3s][3] on a bespoke operating system, 
+Scripts and tools to accomplish automated installations of [Jitsi Meet][1] with [k3os][2]
+(Rancher Labs' tiny Kubernetes distribution [k3s][3] on a bespoke operating system), 
 all inside the KVM based open-source virtualization platform [Proxmox VE 6.1][4].
 
 
@@ -11,10 +11,10 @@ We want to create a virtual machine (VM) using the KVM hypervisor of Proxmox, wi
 
 In oder to accomplish this, we need a customized version of the K3os ISO image, 
 that does not ask any questions during installation.
-This remastered ISO image needs to be created only once for each new version of K3os.
-With [`cloud-init`][5], it is possible to inject unique configuration data (aka `config.yaml`) 
+For each new version of K3os, this remastered ISO image needs to be created only once.
+With [`cloud-init`][5] technology, it is possible to inject unique configuration data (aka `config.yaml`) 
 into the fully automatic installation process of a K3os VM.
-So for each K3os instance, that we want to create, a separate `cloud-init` CDROM (ISO image) needs to built.
+So for each K3os instance, that we want to create, a separate `cloud-init` CDROM (ISO image) needs to be built.
 
 Refer to Rancher Labs' [Github repo][2] for documentation on installing and running K3os.
 
