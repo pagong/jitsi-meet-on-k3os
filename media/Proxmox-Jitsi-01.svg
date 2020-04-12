@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generiert durch Microsoft Visio, SVG Export Proxmox-Jitsi-01.svg Page-1 -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="8.26772in" height="11.6929in"
+		viewBox="0 0 595.276 841.89" xml:space="preserve" color-interpolation-filters="sRGB" class="st36">
+	<v:documentProperties v:langID="1031" v:metric="true" v:viewMarkup="false">
+		<v:userDefs>
+			<v:ud v:nameU="msvNoAutoConnect" v:val="VT0(0):26"/>
+		</v:userDefs>
+	</v:documentProperties>
+
+	<style type="text/css">
+	<![CDATA[
+		.st1 {fill:#ff00ff;fill-opacity:0;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0;stroke-width:0.72}
+		.st2 {fill:url(#grad0-7)}
+		.st3 {stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.36}
+		.st4 {fill:url(#grad11-12)}
+		.st5 {stroke:#a78450;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.36}
+		.st6 {fill:url(#grad12-19);stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.36}
+		.st7 {stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5}
+		.st8 {fill:url(#grad12-28);stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.36}
+		.st9 {stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.6}
+		.st10 {fill:#000000;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.36}
+		.st11 {fill:url(#grad8-44);stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.12}
+		.st12 {fill:url(#grad10-49);stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.12}
+		.st13 {fill:#000000;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st14 {stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.36}
+		.st15 {fill:#000000;font-family:Calibri;font-size:1.5em}
+		.st16 {fill:#fbd7bb;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st17 {fill:#000000}
+		.st18 {stroke:#000000;stroke-dasharray:5.25,3.75;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st19 {fill:#000000;font-family:Calibri;font-size:1.33333em}
+		.st20 {fill:#ffffff;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st21 {stroke:#00b0f0;stroke-linecap:round;stroke-linejoin:round;stroke-width:3}
+		.st22 {fill:#fee599;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st23 {fill:#ffffff}
+		.st24 {fill:none;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:3}
+		.st25 {fill:#000000;font-family:Calibri;font-size:0.833336em}
+		.st26 {font-size:1em}
+		.st27 {font-size:1em;font-weight:bold}
+		.st28 {fill:url(#grad1-118);stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.1}
+		.st29 {fill:#c0c0c0;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.00470104}
+		.st30 {fill:#000000;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.05}
+		.st31 {fill:#ffffff;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.05}
+		.st32 {stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.05}
+		.st33 {fill:none;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st34 {fill:#000000;font-family:Calibri;font-size:1.00001em;font-weight:bold}
+		.st35 {font-size:1em;font-weight:normal}
+		.st36 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<defs id="Patterns_And_Gradients">
+		<linearGradient id="grad0-7" x1="0" y1="0" x2="1" y2="0" gradientTransform="rotate(270 0.5 0.5)">
+			<stop offset="0" stop-color="#ffffff" stop-opacity="1"/>
+			<stop offset="1" stop-color="#e1d8c1" stop-opacity="1"/>
+		</linearGradient>
+		<pattern id="grad11-12" x="0" y="0" width="1" height="1" patternContentUnits="objectBoundingBox">
+			<path d="M 0 1 L 0 0 L 1 0 z" style="fill:url(#grad0-13)"/>
+			<path d="M 0 1 L 1 1 L 1 0 z" style="fill:url(#grad0-14)"/>
+		</pattern>
+		<linearGradient id="grad0-13" x1="0" y1="0" x2="1" y2="0" gradientTransform="rotate(180 0.5 0.5)">
+			<stop offset="0" stop-color="#ffffff" stop-opacity="1"/>
+			<stop offset="1" stop-color="#c9ba96" stop-opacity="1"/>
+		</linearGradient>
+		<linearGradient id="grad0-14" x1="0" y1="0" x2="1" y2="0" gradientTransform="rotate(90 0.5 0.5)">
+			<stop offset="0" stop-color="#ffffff" stop-opacity="1"/>
+			<stop offset="1" stop-color="#c9ba96" stop-opacity="1"/>
+		</linearGradient>
+		<pattern id="grad12-19" x="0" y="0" width="1" height="1" patternContentUnits="objectBoundingBox">
+			<path d="M 0 0 L 0 1 L 1 1 z" style="fill:url(#grad0-20)"/>
+			<path d="M 0 0 L 1 0 L 1 1 z" style="fill:url(#grad0-21)"/>
+		</pattern>
+		<linearGradient id="grad0-20" x1="0" y1="0" x2="1" y2="0" gradientTransform="rotate(90 0.5 0.5)">
+			<stop offset="0" stop-color="#ffffff" stop-opacity="1"/>
+			<stop offset="1" stop-color="#b6a06d" stop-opacity="1"/>
+		</linearGradient>
+		<linearGradient id="grad0-21" x1="0" y1="0" x2="1" y2="0" gradientTransform="rotate(360 0.5 0.5)">
+			<stop offset="0" stop-color="#ffffff" stop-opacity="1"/>
+			<stop offset="1" stop-color="#b6a06d" stop-opacity="1"/>
+		</linearGradient>
+		<pattern id="grad12-28" x="0" y="0" width="1" height="1" patternContentUnits="objectBoundingBox">
+			<path d="M 0 0 L 0 1 L 1 1 z" style="fill:url(#grad0-29)"/>
+			<path d="M 0 0 L 1 0 L 1 1 z" style="fill:url(#grad0-30)"/>
+		</pattern>
+		<linearGradient id="grad0-29" x1="0" y1="0" x2="1" y2="0" gradientTransform="rotate(90 0.5 0.5)">
+			<stop offset="0" stop-color="#ffffff" stop-opacity="1"/>
+			<stop offset="1" stop-color="#339966" stop-opacity="1"/>
+		</linearGradient>
+		<linearGradient id="grad0-30" x1="0" y1="0" x2="1" y2="0" gradientTransform="rotate(360 0.5 0.5)">
+			<stop offset="0" stop-color="#ffffff" stop-opacity="1"/>
+			<stop offset="1" stop-color="#339966" stop-opacity="1"/>
+		</linearGradient>
+		<linearGradient id="grad0-34" x1="0" y1="0" x2="1" y2="0" gradientTransform="rotate(270 0.5 0.5)">
+			<stop offset="0" stop-color="#ffffff" stop-opacity="1"/>
+			<stop offset="1" stop-color="#e7e4cd" stop-opacity="1"/>
+		</linearGradient>
+		<pattern id="grad8-44" x="0" y="0" width="1" height="1" patternContentUnits="objectBoundingBox">
+			<path d="M 0 0 L 1 0 L 1 1 z" style="fill:url(#grad0-34)"/>
+			<path d="M 0 0 L 0 1 L 1 1 z" style="fill:url(#grad0-45)"/>
+		</pattern>
+		<linearGradient id="grad0-45" x1="0" y1="0" x2="1" y2="0" gradientTransform="rotate(180 0.5 0.5)">
+			<stop offset="0" stop-color="#ffffff" stop-opacity="1"/>
+			<stop offset="1" stop-color="#e7e4cd" stop-opacity="1"/>
+		</linearGradient>
+		<pattern id="grad10-49" x="0" y="0" width="1" height="1" patternContentUnits="objectBoundingBox">
+			<path d="M 0.5 0.5 L 0 0 L 0 1 z" style="fill:url(#grad0-50)"/>
+			<path d="M 0.5 0.5 L 1 0 L 1 1 z" style="fill:url(#grad0-51)"/>
+			<path d="M 0.5 0.5 L 0 0 L 1 0 z" style="fill:url(#grad0-52)"/>
+			<path d="M 0.5 0.5 L 0 1 L 1 1 z" style="fill:url(#grad0-53)"/>
+		</pattern>
+		<linearGradient id="grad0-50" x1="0" y1="0" x2="1" y2="0" gradientTransform="rotate(180 0.5 0.5)">
+			<stop offset="0" stop-color="#000000" stop-opacity="0.4"/>
+			<stop offset="1" stop-color="#e7e4cd" stop-opacity="0.4"/>
+		</linearGradient>
+		<linearGradient id="grad0-51" x1="0" y1="0" x2="1" y2="0" gradientTransform="rotate(360 0.5 0.5)">
+			<stop offset="0" stop-color="#000000" stop-opacity="0.4"/>
+			<stop offset="1" stop-color="#e7e4cd" stop-opacity="0.4"/>
+		</linearGradient>
+		<linearGradient id="grad0-52" x1="0" y1="0" x2="1" y2="0" gradientTransform="rotate(270 0.5 0.5)">
+			<stop offset="0" stop-color="#000000" stop-opacity="0.4"/>
+			<stop offset="1" stop-color="#e7e4cd" stop-opacity="0.4"/>
+		</linearGradient>
+		<linearGradient id="grad0-53" x1="0" y1="0" x2="1" y2="0" gradientTransform="rotate(90 0.5 0.5)">
+			<stop offset="0" stop-color="#000000" stop-opacity="0.4"/>
+			<stop offset="1" stop-color="#e7e4cd" stop-opacity="0.4"/>
+		</linearGradient>
+		<radialGradient id="grad1-118" cx="1" cy="1" r="1.4">
+			<stop offset="0" stop-color="#e6e6e6" stop-opacity="1"/>
+			<stop offset="1" stop-color="#ffffff" stop-opacity="1"/>
+		</radialGradient>
+	</defs>
+	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+		<title>Zeichenblatt-1</title>
+		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
+				v:shadowOffsetY="-8.50394"/>
+		<v:layer v:name="Verbinder" v:index="0"/>
+		<g id="group1-1" transform="translate(18,-38.189)" v:mID="1" v:groupContext="group">
+			<v:custProps>
+				<v:cp v:nameU="Manufacturer" v:lbl="Hersteller" v:type="0" v:sortKey="Equipment" v:invis="false" v:ask="false"
+						v:langID="1031"/>
+				<v:cp v:nameU="ProductNumber" v:lbl="Produktnummer" v:type="0" v:sortKey="Equipment" v:invis="false" v:ask="false"
+						v:langID="1031"/>
+				<v:cp v:nameU="PartNumber" v:lbl="Teilenummer" v:type="0" v:sortKey="Equipment" v:invis="false" v:ask="false"
+						v:langID="1031"/>
+				<v:cp v:nameU="ProductDescription" v:lbl="Produktbeschreibung" v:type="0" v:sortKey="Equipment" v:invis="false"
+						v:ask="false" v:langID="1031"/>
+				<v:cp v:nameU="AssetNumber" v:lbl="Inventarnummer" v:type="0" v:sortKey="Asset" v:invis="false" v:ask="false"
+						v:langID="1031"/>
+				<v:cp v:nameU="SerialNumber" v:lbl="Seriennummer" v:type="0" v:sortKey="Asset" v:invis="false" v:ask="false"
+						v:langID="1031"/>
+				<v:cp v:nameU="Location" v:lbl="Standort" v:type="0" v:sortKey="Asset" v:invis="false" v:ask="false"
+						v:langID="1031"/>
+				<v:cp v:nameU="Building" v:lbl="Gebäude" v:type="0" v:sortKey="Asset" v:invis="false" v:ask="false" v:langID="1031"/>
+				<v:cp v:nameU="Room" v:lbl="Raum" v:type="0" v:sortKey="Asset" v:invis="false" v:ask="false" v:langID="1031"/>
+				<v:cp v:nameU="Department" v:lbl="Abteilung" v:type="0" v:invis="false" v:ask="false" v:langID="1031"/>
+				<v:cp v:nameU="NetworkName" v:lbl="Netzwerkname" v:type="0" v:sortKey="Network" v:invis="false" v:ask="false"
+						v:langID="1031"/>
+				<v:cp v:nameU="IPAddress" v:lbl="IP-Adresse" v:type="0" v:sortKey="Network" v:invis="false" v:ask="false"
+						v:langID="1031"/>
+				<v:cp v:nameU="SubnetMask" v:lbl="Subnetzmaske" v:type="0" v:sortKey="Network" v:invis="false" v:ask="false"
+						v:langID="1031"/>
+				<v:cp v:nameU="AdminInterface" v:lbl="Administrative Schnittstelle" v:type="0" v:sortKey="Network" v:invis="false"
+						v:ask="false" v:langID="1031"/>
+				<v:cp v:nameU="NumberofPorts" v:lbl="Anzahl der Anschlüsse" v:type="0" v:sortKey="Network" v:invis="false"
+						v:ask="false" v:langID="1031"/>
+				<v:cp v:nameU="CommunityString" v:lbl="Community String" v:type="0" v:sortKey="Network" v:invis="false"
+						v:ask="false" v:langID="1031"/>
+				<v:cp v:nameU="NetworkDescription" v:lbl="Netzwerkbeschreibung" v:type="0" v:sortKey="Network" v:invis="false"
+						v:ask="false" v:langID="1031"/>
+				<v:cp v:nameU="CPU" v:lbl="CPU" v:type="0" v:sortKey="Workstation" v:invis="false" v:ask="false" v:langID="1031"/>
+				<v:cp v:nameU="Memory" v:lbl="Arbeitsspeicher" v:type="0" v:sortKey="Workstation" v:invis="false" v:ask="false"
+						v:langID="1031"/>
+				<v:cp v:nameU="OperatingSystem" v:lbl="Betriebssystem" v:type="0" v:sortKey="Workstation" v:invis="false"
+						v:ask="false" v:langID="1031"/>
+				<v:cp v:nameU="BelongsTo" v:lbl="Zuordnung" v:type="0" v:invis="true" v:ask="false" v:langID="1031"/>
+				<v:cp v:nameU="ShapeClass" v:lbl="ShapeClass" v:type="0" v:invis="true" v:ask="false" v:langID="1031"
+						v:val="VT4(Geräte)"/>
+				<v:cp v:nameU="ShapeType" v:lbl="ShapeType" v:type="0" v:invis="true" v:ask="false" v:langID="1031"
+						v:val="VT4(Server)"/>
+				<v:cp v:nameU="MACAddress" v:lbl="MAC-Adresse" v:type="0" v:sortKey="Network" v:invis="false" v:ask="false"
+						v:langID="1031"/>
+				<v:cp v:nameU="HardDriveSize" v:lbl="Festplattenkapazität" v:type="0" v:sortKey="Workstation" v:invis="false"
+						v:ask="false" v:langID="1031"/>
+			</v:custProps>
+			<v:userDefs>
+				<v:ud v:nameU="HasText" v:val="VT0(0):5"/>
+				<v:ud v:nameU="ShapeClass" v:val="VT0(5):26"/>
+				<v:ud v:nameU="ShapeType" v:val="VT0(24):26"/>
+				<v:ud v:nameU="SolSH" v:val="VT15({BF0433D9-CD73-4EB5-8390-8653BE590246}):41"/>
+				<v:ud v:nameU="visLegendShape" v:val="VT0(2):26"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="HasText" v:prompt="" v:val="VT0(1):5"/>
+			</v:userDefs>
+			<title>Server</title>
+			<desc>Proxmox-Host: pve-002</desc>
+			<g id="shape2-2" v:mID="2" v:groupContext="shape">
+				<title>Tabelle.2</title>
+				<path d="M559.28 180.31 L344.17 65.14 L0 252.62 L0.13 734.2 A362.121 338.173 -180 0 0 212.37 841.89 L559.28 654.38
+							 L559.28 180.31 ZM95.49 327.63 A373.717 349.001 -180 0 0 212.37 369.14 A369.542 345.103 0 0 1 95.49 327.63
+							 Z" class="st1"/>
+			</g>
+			<g id="shape3-4" v:mID="3" v:groupContext="shape" transform="translate(0,-472.747)">
+				<title>Tabelle.3</title>
+				<path d="M212.24 841.88 L559.28 653.05 L344.17 537.88 L0 725.37 A373.717 349.001 -180 0 0 212.37 841.89 L212.24 841.88
+							 Z" class="st2"/>
+				<path d="M212.24 841.88 L559.28 653.05 L344.17 537.88 L0 725.37 A373.717 349.001 -180 0 0 212.37 841.89"
+						class="st3"/>
+			</g>
+			<g id="shape4-9" v:mID="4" v:groupContext="shape" transform="translate(0.12708,-3.86535E-12)">
+				<title>Tabelle.4</title>
+				<path d="M212.24 369.14 A369.542 345.103 0 0 1 0 252.08 L0 734.2 A362.121 338.173 -180 0 0 212.24 841.89 L212.11
+							 369.13 L212.24 369.14 Z" class="st4"/>
+				<path d="M212.24 369.14 A369.542 345.103 0 0 1 0 252.08 L0 734.2 A362.121 338.173 -180 0 0 212.24 841.89 L212.11
+							 369.13" class="st5"/>
+			</g>
+			<g id="shape5-16" v:mID="5" v:groupContext="shape" transform="translate(212.238,-0.534307)">
+				<title>Tabelle.5</title>
+				<path d="M0 369.67 L0 841.89 L347.04 654.92 L347.04 180.84 L0 369.67 Z" class="st6"/>
+			</g>
+			<g id="shape6-22" v:mID="6" v:groupContext="shape" transform="translate(0,-0.0171227)">
+				<title>Tabelle.6</title>
+				<path d="M559.28 180.31 L344.17 65.14 L0 252.62 L0.13 734.2 A362.121 338.173 -180 0 0 212.37 841.89 L559.28 654.38
+							 L559.28 180.31" class="st7"/>
+			</g>
+			<g id="shape7-25" v:mID="7" v:groupContext="shape" transform="translate(-197.98,-198.935) rotate(-20)">
+				<title>Tabelle.7</title>
+				<ellipse cx="16.2454" cy="819.769" rx="16.2454" ry="22.1212" class="st8"/>
+			</g>
+			<g id="shape8-31" v:mID="8" v:groupContext="shape" transform="translate(34.417,-68.3164)">
+				<title>Tabelle.8</title>
+				<path d="M0 710.65 A414.554 378.625 -96.44 0 0 143.4 784.3" class="st9"/>
+				<path d="M-0 739.44 A414.554 378.625 -96.44 0 0 143.4 813.1" class="st9"/>
+				<path d="M0 768.23 A414.554 378.625 -96.44 0 0 143.4 841.89" class="st9"/>
+			</g>
+			<g id="group9-38" transform="translate(28.6808,-334.818)" v:mID="9" v:groupContext="group">
+				<title>Tabelle.9</title>
+				<g id="shape10-39" v:mID="10" v:groupContext="shape" transform="translate(0,-77.4908)">
+					<title>Tabelle.10</title>
+					<path d="M5.11 768.23 A361.696 337.776 -180 0 0 148.52 841.89 A7.34945 6.86341 -180 0 0 148.52 828.5 A351.855
+								 328.586 0 0 1 7.98 756.98 A4.76136 4.44648 -180 0 0 0.03 760.76 A10.3772 9.6909 -180 0 0 5.11 768.23
+								 Z" class="st10"/>
+				</g>
+				<g id="shape11-41" v:mID="11" v:groupContext="shape" transform="translate(45.6071,-94.3713)">
+					<title>Tabelle.11</title>
+					<path d="M44.11 841.34 A53.7433 32.7168 -90.9 0 0 1.09 819.91 A35.3604 17.6295 -180 0 0 44.11 841.34 Z"
+							class="st11"/>
+				</g>
+				<g id="shape12-46" v:mID="12" v:groupContext="shape" transform="translate(5.73616,-0.669601)">
+					<title>Tabelle.12</title>
+					<path d="M0 730.74 L0 768.23 A389.075 363.345 -180 0 0 143.4 841.89 L143.4 804.39 A401.809 375.236 0 0 1 -0 730.74
+								 Z" class="st12"/>
+				</g>
+				<g id="shape13-54" v:mID="13" v:groupContext="shape" transform="translate(5.73616,-21.4272)">
+					<title>Tabelle.13</title>
+					<path d="M0 768.23 A352.157 328.868 -180 0 0 143.4 841.89 L143.4 832.52 A389.232 363.491 0 0 1 0 758.86 L0 768.23
+								 Z" class="st13"/>
+				</g>
+				<g id="shape14-56" v:mID="14" v:groupContext="shape" transform="translate(5.73616,-1.3392)">
+					<title>Tabelle.14</title>
+					<path d="M0 730.74 L0 768.23 A389.075 363.345 -180 0 0 143.4 841.89" class="st3"/>
+				</g>
+				<g id="shape15-59" v:mID="15" v:groupContext="shape" transform="translate(5.73616,7.95808E-13)">
+					<title>Tabelle.15</title>
+					<path d="M143.4 841.89 L143.4 804.39 A401.809 375.236 0 0 1 -0 730.74" class="st14"/>
+				</g>
+			</g>
+			<g id="shape1-63" v:mID="1" v:groupContext="groupContent">
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="279.638" cy="856.692" width="184.2" height="29.6036"/>
+				<text x="193.58" y="862.09" class="st15" v:langID="1031"><v:paragraph v:horizAlign="1"/><v:tabList/>Proxmox-Host: pve-002</text>			</g>
+		</g>
+		<g id="group20-65" transform="translate(325.984,-255.118)" v:mID="20" v:groupContext="group">
+			<v:custProps>
+				<v:cp v:nameU="AssetNumber" v:lbl="Inventarnummer" v:prompt="" v:type="0" v:format="" v:sortKey="Asset"
+						v:invis="false" v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="SerialNumber" v:lbl="Seriennummer" v:prompt="" v:type="0" v:format="" v:sortKey="Asset"
+						v:invis="false" v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="Location" v:lbl="Ort" v:prompt="" v:type="0" v:format="" v:sortKey="Asset" v:invis="false"
+						v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="Building" v:lbl="Gebäude" v:prompt="" v:type="0" v:format="" v:sortKey="Asset" v:invis="false"
+						v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="Room" v:lbl="Raum" v:prompt="" v:type="0" v:format="" v:sortKey="Asset" v:invis="false"
+						v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="Manufacturer" v:lbl="Hersteller" v:prompt="" v:type="0" v:format="" v:sortKey="Equipment"
+						v:invis="false" v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="ProductNumber" v:lbl="Produktnummer" v:prompt="" v:type="0" v:format="" v:sortKey="Equipment"
+						v:invis="false" v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="PartNumber" v:lbl="Teilenummer" v:prompt="" v:type="0" v:format="" v:sortKey="Equipment"
+						v:invis="false" v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="ProductDescription" v:lbl="Produktbeschreibung" v:prompt="" v:type="0" v:format=""
+						v:sortKey="Equipment" v:invis="false" v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="NetworkName" v:lbl="Netzwerkname" v:prompt="" v:type="0" v:format="" v:sortKey="Network"
+						v:invis="false" v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="IPAddress" v:lbl="IP-Adresse" v:prompt="" v:type="0" v:format="" v:sortKey="Network" v:invis="false"
+						v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="SubnetMask" v:lbl="Subnetzmaske" v:prompt="" v:type="0" v:format="" v:sortKey="Network"
+						v:invis="false" v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="AdminInterface" v:lbl="Administrative Schnittstelle" v:prompt="" v:type="0" v:format=""
+						v:sortKey="Network" v:invis="false" v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="NumberofPorts" v:lbl="Anzahl der Anschlüsse" v:prompt="" v:type="0" v:format="" v:sortKey="Network"
+						v:invis="false" v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="CommunityString" v:lbl="Community String" v:prompt="" v:type="0" v:format="" v:sortKey="Network"
+						v:invis="false" v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="NetworkDescription" v:lbl="Netzwerkbeschreibung" v:prompt="" v:type="0" v:format=""
+						v:sortKey="Network" v:invis="false" v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="MACAddress" v:lbl="MAC-Adresse" v:prompt="" v:type="0" v:format="" v:sortKey="Network"
+						v:invis="false" v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="CPU" v:lbl="CPU" v:prompt="" v:type="0" v:format="" v:sortKey="Workstation" v:invis="false"
+						v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="Memory" v:lbl="Arbeitsspeicher" v:prompt="" v:type="0" v:format="" v:sortKey="Workstation"
+						v:invis="false" v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="OperatingSystem" v:lbl="Betriebssystem" v:prompt="" v:type="0" v:format="" v:sortKey="Workstation"
+						v:invis="false" v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="HardDriveSize" v:lbl="Festplattenkapazität" v:prompt="" v:type="0" v:format=""
+						v:sortKey="Workstation" v:invis="false" v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="Department" v:lbl="Abteilung" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="ShapeClass" v:lbl="ShapeClass" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="true"
+						v:ask="false" v:langID="1031" v:cal="0" v:val="VT4(Geräte)"/>
+				<v:cp v:nameU="BelongsTo" v:lbl="Zuordnung" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="true"
+						v:ask="false" v:langID="1031" v:cal="0"/>
+			</v:custProps>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="ShapeClass" v:prompt="" v:val="VT0(5):26"/>
+				<v:ud v:nameU="SolSH" v:prompt="" v:val="VT15({BF0433D9-CD73-4EB5-8390-8653BE590246}):41"/>
+				<v:ud v:nameU="visLegendShape" v:prompt="" v:val="VT0(2):26"/>
+			</v:userDefs>
+			<title>Virtueller Server</title>
+			<desc>jitsi3</desc>
+			<g id="shape21-66" v:mID="21" v:groupContext="shape" transform="translate(30.4266,-5.51181)">
+				<title>Tabelle.21</title>
+				<rect x="0" y="704.094" width="87.9657" height="137.795" class="st16"/>
+			</g>
+			<g id="shape22-68" v:mID="22" v:groupContext="shape" transform="translate(96.1714,-64.3339)">
+				<title>Tabelle.22</title>
+				<ellipse cx="5.31752" cy="836.572" rx="5.31752" ry="5.31752" class="st16"/>
+			</g>
+			<g id="shape23-70" v:mID="23" v:groupContext="shape" transform="translate(63.9026,-28.0992)">
+				<title>Tabelle.23</title>
+				<v:userDefs>
+					<v:ud v:nameU="SurroundingRegionColor" v:prompt="" v:val="VT0(1):26"/>
+					<v:ud v:nameU="SurroundingRegionColor" v:prompt="" v:val="VT5(#fbd7bb)"/>
+				</v:userDefs>
+				<path d="M-0 841.89 L42.9 841.89 L42.9 838.44 L-0 838.44 L-0 841.89 ZM-0 831.44 L42.9 831.44 L42.9 828 L-0 828 L-0
+							 831.44 ZM-0 820.99 L42.9 820.99 L42.9 817.55 L-0 817.55 L-0 820.99 Z" class="st17"/>
+			</g>
+			<g id="shape24-73" v:mID="24" v:groupContext="shape" transform="translate(24.9148,2.77197E-06)">
+				<title>Tabelle.24</title>
+				<path d="M0 841.89 L98.99 841.89 L98.99 693.07 L0 693.07 L0 841.89" class="st18"/>
+			</g>
+			<g id="shape20-76" v:mID="20" v:groupContext="groupContent">
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="74.4094" cy="855.492" width="41.17" height="27.2039"/>
+				<text x="58.96" y="860.29" class="st19" v:langID="1031"><v:paragraph v:horizAlign="1"/><v:tabList/>jitsi3</text>			</g>
+		</g>
+		<g id="group67-78" transform="translate(297.638,-389.764)" v:mID="67" v:groupContext="group">
+			<v:custProps>
+				<v:cp v:nameU="AssetNumber" v:lbl="Inventarnummer" v:prompt="" v:type="0" v:format="" v:sortKey="Asset"
+						v:invis="false" v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="SerialNumber" v:lbl="Seriennummer" v:prompt="" v:type="0" v:format="" v:sortKey="Asset"
+						v:invis="false" v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="Location" v:lbl="Ort" v:prompt="" v:type="0" v:format="" v:sortKey="Asset" v:invis="false"
+						v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="Building" v:lbl="Gebäude" v:prompt="" v:type="0" v:format="" v:sortKey="Asset" v:invis="false"
+						v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="Room" v:lbl="Raum" v:prompt="" v:type="0" v:format="" v:sortKey="Asset" v:invis="false"
+						v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="Manufacturer" v:lbl="Hersteller" v:prompt="" v:type="0" v:format="" v:sortKey="Equipment"
+						v:invis="false" v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="ProductNumber" v:lbl="Produktnummer" v:prompt="" v:type="0" v:format="" v:sortKey="Equipment"
+						v:invis="false" v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="PartNumber" v:lbl="Teilenummer" v:prompt="" v:type="0" v:format="" v:sortKey="Equipment"
+						v:invis="false" v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="ProductDescription" v:lbl="Produktbeschreibung" v:prompt="" v:type="0" v:format=""
+						v:sortKey="Equipment" v:invis="false" v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="NetworkName" v:lbl="Netzwerkname" v:prompt="" v:type="0" v:format="" v:sortKey="Network"
+						v:invis="false" v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="IPAddress" v:lbl="IP-Adresse" v:prompt="" v:type="0" v:format="" v:sortKey="Network" v:invis="false"
+						v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="SubnetMask" v:lbl="Subnetzmaske" v:prompt="" v:type="0" v:format="" v:sortKey="Network"
+						v:invis="false" v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="AdminInterface" v:lbl="Administrative Schnittstelle" v:prompt="" v:type="0" v:format=""
+						v:sortKey="Network" v:invis="false" v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="NumberofPorts" v:lbl="Anzahl der Anschlüsse" v:prompt="" v:type="0" v:format="" v:sortKey="Network"
+						v:invis="false" v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="CommunityString" v:lbl="Community String" v:prompt="" v:type="0" v:format="" v:sortKey="Network"
+						v:invis="false" v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="NetworkDescription" v:lbl="Netzwerkbeschreibung" v:prompt="" v:type="0" v:format=""
+						v:sortKey="Network" v:invis="false" v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="MACAddress" v:lbl="MAC-Adresse" v:prompt="" v:type="0" v:format="" v:sortKey="Network"
+						v:invis="false" v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="ShapeClass" v:lbl="ShapeClass" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="true"
+						v:ask="false" v:langID="1031" v:cal="0" v:val="VT4(Geräte)"/>
+				<v:cp v:nameU="ShapeType" v:lbl="ShapeType" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="true"
+						v:ask="false" v:langID="1031" v:cal="0" v:val="VT4(Gerät)"/>
+				<v:cp v:nameU="SubShapeType" v:lbl="SubShapeType" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="true"
+						v:ask="false" v:langID="1031" v:cal="0" v:val="VT4(Switch)"/>
+			</v:custProps>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="ShapeClass" v:prompt="" v:val="VT0(5):26"/>
+				<v:ud v:nameU="SolSH" v:prompt="" v:val="VT15({BF0433D9-CD73-4EB5-8390-8653BE590246}):41"/>
+				<v:ud v:nameU="visLegendShape" v:prompt="" v:val="VT0(2):26"/>
+			</v:userDefs>
+			<title>Switch</title>
+			<g id="shape68-79" v:mID="68" v:groupContext="shape" transform="translate(0,-71.9146)">
+				<title>Tabelle.68</title>
+				<path d="M196.2 841.89 L200.45 833.39 L12.14 833.39 L16.39 841.89 L196.2 841.89 ZM0 829.32 L212.6 829.32 L212.6 773.12
+							 L0 773.12 L0 829.32 Z" class="st20"/>
+			</g>
+			<g id="shape69-81" v:mID="69" v:groupContext="shape" transform="translate(164.001,-95.1048)">
+				<title>Tabelle.69</title>
+				<rect x="0" y="807.294" width="36.4521" height="34.5961" class="st20"/>
+			</g>
+			<g id="shape70-83" v:mID="70" v:groupContext="shape" transform="translate(16.8548,-98.4809)">
+				<title>Tabelle.70</title>
+				<v:userDefs>
+					<v:ud v:nameU="SurroundingRegionColor" v:prompt="" v:val="VT0(1):26"/>
+				</v:userDefs>
+				<path d="M14.95 830.98 L0 830.98 L0 838.15 L3.89 838.15 L3.89 841.89 L11.07 841.89 L11.07 838.15 L14.95 838.15 L14.95
+							 830.98 ZM38.98 830.98 L24.02 830.98 L24.02 838.15 L27.91 838.15 L27.91 841.89 L35.09 841.89 L35.09 838.15
+							 L38.98 838.15 L38.98 830.98 ZM63 830.98 L48.05 830.98 L48.05 838.15 L51.93 838.15 L51.93 841.89 L59.11
+							 841.89 L59.11 838.15 L63 838.15 L63 830.98 ZM87.03 830.98 L72.07 830.98 L72.07 838.15 L75.96 838.15
+							 L75.96 841.89 L83.14 841.89 L83.14 838.15 L87.03 838.15 L87.03 830.98 ZM111.05 830.98 L96.1 830.98 L96.1
+							 838.15 L99.98 838.15 L99.98 841.89 L107.16 841.89 L107.16 838.15 L111.05 838.15 L111.05 830.98 ZM111.05
+							 813.65 L96.1 813.65 L96.1 820.83 L99.98 820.83 L99.98 824.57 L107.16 824.57 L107.16 820.83 L111.05 820.83
+							 L111.05 813.65 ZM87.03 813.65 L72.07 813.65 L72.07 820.83 L75.96 820.83 L75.96 824.57 L83.14 824.57
+							 L83.14 820.83 L87.03 820.83 L87.03 813.65 ZM63 813.65 L48.05 813.65 L48.05 820.83 L51.93 820.83 L51.93
+							 824.57 L59.11 824.57 L59.11 820.83 L63 820.83 L63 813.65 ZM38.98 813.65 L24.02 813.65 L24.02 820.83
+							 L27.91 820.83 L27.91 824.57 L35.09 824.57 L35.09 820.83 L38.98 820.83 L38.98 813.65 ZM14.95 813.65 L0
+							 813.65 L0 820.83 L3.89 820.83 L3.89 824.57 L11.07 824.57 L11.07 820.83 L14.95 820.83 L14.95 813.65 Z"
+						class="st17"/>
+			</g>
+			<g id="shape71-86" v:mID="71" v:groupContext="shape" transform="translate(166.994,-100.858)">
+				<title>Tabelle.71</title>
+				<v:userDefs>
+					<v:ud v:nameU="SurroundingRegionColor" v:prompt="" v:val="VT0(1):26"/>
+				</v:userDefs>
+				<path d="M16.9 829.54 L21.43 823.68 L26.57 823.67 L23.9 826.31 L27.01 826.31 L30.47 822.56 L27.02 818.8 L23.89 818.8
+							 L26.55 821.43 L19.82 821.43 L15.23 827.38 L10.64 821.43 L3.92 821.43 L6.57 818.8 L3.44 818.8 L0 822.56
+							 L3.46 826.31 L6.56 826.31 L3.89 823.67 L9.04 823.68 L13.56 829.55 L7.8 837.01 L3.89 837.02 L6.56 834.38
+							 L3.46 834.38 L0 838.14 L3.44 841.89 L6.57 841.89 L3.92 839.27 L9.41 839.27 L15.23 831.71 L21.06 839.27
+							 L26.55 839.27 L23.89 841.89 L27.02 841.89 L30.47 838.14 L27.01 834.38 L23.9 834.38 L26.57 837.02 L22.66
+							 837.01 L16.9 829.54 Z" class="st17"/>
+			</g>
+		</g>
+		<g id="shape76-89" v:mID="76" v:groupContext="shape" v:layerMember="0" transform="translate(368.504,-496.063)">
+			<title>Dynamischer Verbinder.76</title>
+			<path d="M0 841.89 L0 898.58 L32.6 898.58 L32.6 941.1" class="st21"/>
+		</g>
+		<g id="group84-92" transform="translate(148.819,-559.843)" v:mID="84" v:groupContext="group">
+			<v:custProps>
+				<v:cp v:nameU="AssetNumber" v:lbl="Inventarnummer" v:prompt="" v:type="0" v:format="" v:sortKey="Asset"
+						v:invis="false" v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="SerialNumber" v:lbl="Seriennummer" v:prompt="" v:type="0" v:format="" v:sortKey="Asset"
+						v:invis="false" v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="Location" v:lbl="Ort" v:prompt="" v:type="0" v:format="" v:sortKey="Asset" v:invis="false"
+						v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="Building" v:lbl="Gebäude" v:prompt="" v:type="0" v:format="" v:sortKey="Asset" v:invis="false"
+						v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="Room" v:lbl="Raum" v:prompt="" v:type="0" v:format="" v:sortKey="Asset" v:invis="false"
+						v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="Manufacturer" v:lbl="Hersteller" v:prompt="" v:type="0" v:format="" v:sortKey="Equipment"
+						v:invis="false" v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="ProductNumber" v:lbl="Produktnummer" v:prompt="" v:type="0" v:format="" v:sortKey="Equipment"
+						v:invis="false" v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="PartNumber" v:lbl="Teilenummer" v:prompt="" v:type="0" v:format="" v:sortKey="Equipment"
+						v:invis="false" v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="ProductDescription" v:lbl="Produktbeschreibung" v:prompt="" v:type="0" v:format=""
+						v:sortKey="Equipment" v:invis="false" v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="NetworkName" v:lbl="Netzwerkname" v:prompt="" v:type="0" v:format="" v:sortKey="Network"
+						v:invis="false" v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="IPAddress" v:lbl="IP-Adresse" v:prompt="" v:type="0" v:format="" v:sortKey="Network" v:invis="false"
+						v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="SubnetMask" v:lbl="Subnetzmaske" v:prompt="" v:type="0" v:format="" v:sortKey="Network"
+						v:invis="false" v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="AdminInterface" v:lbl="Administrative Schnittstelle" v:prompt="" v:type="0" v:format=""
+						v:sortKey="Network" v:invis="false" v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="NumberofPorts" v:lbl="Anzahl der Anschlüsse" v:prompt="" v:type="0" v:format="" v:sortKey="Network"
+						v:invis="false" v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="CommunityString" v:lbl="Community String" v:prompt="" v:type="0" v:format="" v:sortKey="Network"
+						v:invis="false" v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="NetworkDescription" v:lbl="Netzwerkbeschreibung" v:prompt="" v:type="0" v:format=""
+						v:sortKey="Network" v:invis="false" v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="MACAddress" v:lbl="MAC-Adresse" v:prompt="" v:type="0" v:format="" v:sortKey="Network"
+						v:invis="false" v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="CPU" v:lbl="CPU" v:prompt="" v:type="0" v:format="" v:sortKey="Workstation" v:invis="false"
+						v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="Memory" v:lbl="Arbeitsspeicher" v:prompt="" v:type="0" v:format="" v:sortKey="Workstation"
+						v:invis="false" v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="OperatingSystem" v:lbl="Betriebssystem" v:prompt="" v:type="0" v:format="" v:sortKey="Workstation"
+						v:invis="false" v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="HardDriveSize" v:lbl="Festplattenkapazität" v:prompt="" v:type="0" v:format=""
+						v:sortKey="Workstation" v:invis="false" v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="Department" v:lbl="Abteilung" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1031" v:cal="0"/>
+				<v:cp v:nameU="ShapeClass" v:lbl="ShapeClass" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="true"
+						v:ask="false" v:langID="1031" v:cal="0" v:val="VT4(Geräte)"/>
+				<v:cp v:nameU="BelongsTo" v:lbl="Zuordnung" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="true"
+						v:ask="false" v:langID="1031" v:cal="0"/>
+			</v:custProps>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="ShapeClass" v:prompt="" v:val="VT0(5):26"/>
+				<v:ud v:nameU="SolSH" v:prompt="" v:val="VT15({BF0433D9-CD73-4EB5-8390-8653BE590246}):41"/>
+				<v:ud v:nameU="visLegendShape" v:prompt="" v:val="VT0(2):26"/>
+			</v:userDefs>
+			<title>Virtueller Server.84</title>
+			<desc>jitsi2</desc>
+			<g id="shape85-93" v:mID="85" v:groupContext="shape" transform="translate(30.4266,-5.51181)">
+				<title>Tabelle.85</title>
+				<rect x="0" y="704.094" width="87.9657" height="137.795" class="st22"/>
+			</g>
+			<g id="shape86-95" v:mID="86" v:groupContext="shape" transform="translate(96.1714,-64.3339)">
+				<title>Tabelle.86</title>
+				<ellipse cx="5.31752" cy="836.572" rx="5.31752" ry="5.31752" class="st22"/>
+			</g>
+			<g id="shape87-97" v:mID="87" v:groupContext="shape" transform="translate(63.9026,-28.0992)">
+				<title>Tabelle.87</title>
+				<v:userDefs>
+					<v:ud v:nameU="SurroundingRegionColor" v:prompt="" v:val="VT0(1):26"/>
+					<v:ud v:nameU="SurroundingRegionColor" v:prompt="" v:val="VT5(#fee599)"/>
+				</v:userDefs>
+				<path d="M-0 841.89 L42.9 841.89 L42.9 838.44 L-0 838.44 L-0 841.89 ZM-0 831.44 L42.9 831.44 L42.9 828 L-0 828 L-0
+							 831.44 ZM-0 820.99 L42.9 820.99 L42.9 817.55 L-0 817.55 L-0 820.99 Z" class="st23"/>
+			</g>
+			<g id="shape88-100" v:mID="88" v:groupContext="shape" transform="translate(24.9148,2.77197E-06)">
+				<title>Tabelle.88</title>
+				<path d="M0 841.89 L98.99 841.89 L98.99 693.07 L0 693.07 L0 841.89" class="st18"/>
+			</g>
+			<g id="shape84-103" v:mID="84" v:groupContext="groupContent">
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="74.4094" cy="855.492" width="42.52" height="27.2039"/>
+				<text x="58.96" y="860.29" class="st19" v:langID="1031"><v:paragraph v:horizAlign="1"/><v:tabList/>jitsi2</text>			</g>
+		</g>
+		<g id="shape91-105" v:mID="91" v:groupContext="shape" v:layerMember="0" transform="translate(347.244,-510.236)">
+			<title>Dynamischer Verbinder.91</title>
+			<path d="M0 841.89 L0 762.07 L-74.22 762.07" class="st21"/>
+		</g>
+		<g id="shape78-108" v:mID="78" v:groupContext="shape" transform="translate(184.252,-646.299)">
+			<title>Tabelle.78</title>
+			<desc>2 vCPU 4GB RAM 30GB disk Ubuntu 18.04</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="38.9764" cy="817.795" width="77.96" height="48.189"/>
+			<rect x="0" y="793.701" width="77.9528" height="48.189" class="st24"/>
+			<text x="4" y="802.8" class="st25" v:langID="1031"><v:paragraph/><v:tabList/>2 vCPU<v:newlineChar/><tspan x="4"
+						dy="1.2em" class="st26">4GB RAM<v:newlineChar/></tspan><tspan x="4" dy="1.2em" class="st26">30GB disk<v:newlineChar/></tspan><tspan
+						x="4" dy="1.2em" class="st27">Ubuntu </tspan>18.04</text>		</g>
+		<g id="group163-114" transform="translate(510.733,-566.929)" v:mID="163" v:groupContext="group">
+			<title>100/10B-TX Switch Xcvr</title>
+			<g id="shape164-115" v:mID="164" v:groupContext="shape">
+				<title>Switch 8000.163</title>
+				<path d="M0.02 805.45 A1.58381 2.36392 0 0 1 1.81 802.77 L64.41 802.77 A2.10004 3.13442 0 0 1 66.54 805.95 L66.54
+							 838.88 A1.90716 2.84653 0 0 1 64.52 841.88 L2.03 841.88 A2.1057 3.14286 0 0 1 0.02 838.88 L0.02 805.45
+							 Z" class="st28"/>
+			</g>
+			<g id="shape165-119" v:mID="165" v:groupContext="shape" transform="translate(859.226,834.061) rotate(90) scale(-1,1)">
+				<title>Tabelle.165</title>
+				<path d="M0 841.35 L0 809.69 L0.2 809.41 L0.77 809.22 L1.56 809.14 L21.93 809.14 L22.72 809.22 L23.28 809.41 L23.49
+							 809.69 L23.49 841.35 L23.28 841.63 L22.72 841.82 L21.93 841.89 L1.56 841.89 L0.77 841.82 L0.2 841.63
+							 L0 841.35 Z" class="st29"/>
+			</g>
+			<g id="shape166-121" v:mID="166" v:groupContext="shape" transform="translate(865.893,830.147) rotate(90) scale(-1,1)">
+				<title>Tabelle.166</title>
+				<path d="M0 841.89 L10.86 841.89 L10.88 837.63 L13.39 837.63 L13.41 835.83 L15.66 835.83 L15.66 828.68 L13.39 828.71
+							 L13.39 826.91 L10.88 826.93 L10.86 822.63 L0 822.63 L0 841.89 Z" class="st30"/>
+			</g>
+			<g id="shape167-123" v:mID="167" v:groupContext="shape" transform="translate(846.313,830.269) rotate(90)">
+				<title>Tabelle.167</title>
+				<path d="M0 838.06 A3.87753 3.83159 0 1 1 7.76 838.06 A3.87753 3.83159 0 1 1 0 838.06 Z" class="st31"/>
+			</g>
+			<g id="shape168-125" v:mID="168" v:groupContext="shape" transform="translate(604.799,239.297) rotate(45.3415)">
+				<title>Tabelle.168</title>
+				<path d="M0 841.89 L7.63 841.89" class="st32"/>
+			</g>
+			<g id="shape169-128" v:mID="169" v:groupContext="shape" transform="translate(604.186,240.073) rotate(45.3415)">
+				<title>Tabelle.169</title>
+				<path d="M0 841.89 L7.63 841.89" class="st32"/>
+			</g>
+			<g id="shape170-131" v:mID="170" v:groupContext="shape" transform="translate(848.612,832.707) rotate(90)">
+				<title>Tabelle.170</title>
+				<path d="M0 840.36 A1.55101 1.53264 0 1 1 3.1 840.36 A1.55101 1.53264 0 1 1 0 840.36 Z" class="st31"/>
+			</g>
+			<g id="shape171-133" v:mID="171" v:groupContext="shape" transform="translate(895.405,830.269) rotate(90)">
+				<title>Tabelle.171</title>
+				<path d="M0 838.06 A3.87753 3.83159 0 1 1 7.76 838.06 A3.87753 3.83159 0 1 1 0 838.06 Z" class="st31"/>
+			</g>
+			<g id="shape172-135" v:mID="172" v:groupContext="shape" transform="translate(653.891,239.297) rotate(45.3415)">
+				<title>Tabelle.172</title>
+				<path d="M0 841.89 L7.63 841.89" class="st32"/>
+			</g>
+			<g id="shape173-138" v:mID="173" v:groupContext="shape" transform="translate(653.278,240.073) rotate(45.3415)">
+				<title>Tabelle.173</title>
+				<path d="M0 841.89 L7.63 841.89" class="st32"/>
+			</g>
+			<g id="shape174-141" v:mID="174" v:groupContext="shape" transform="translate(897.704,832.707) rotate(90)">
+				<title>Tabelle.174</title>
+				<path d="M0 840.36 A1.55101 1.53264 0 1 1 3.1 840.36 A1.55101 1.53264 0 1 1 0 840.36 Z" class="st31"/>
+			</g>
+		</g>
+		<g id="shape92-143" v:mID="92" v:groupContext="shape" v:layerMember="0" transform="translate(393.449,-509.49)">
+			<title>Dynamischer Verbinder.92</title>
+			<path d="M0 841.89 L0 764.61 L134.62 764.61" class="st21"/>
+		</g>
+		<g id="shape176-146" v:mID="176" v:groupContext="shape" transform="translate(524.409,-602.57)">
+			<title>Tabelle.176</title>
+			<desc>eth0</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="21.2598" cy="832.176" width="42.52" height="19.4273"/>
+			<rect x="0" y="822.462" width="42.5197" height="19.4273" class="st24"/>
+			<text x="11.94" y="835.18" class="st25" v:langID="1031"><v:paragraph v:horizAlign="1"/><v:tabList/>eth0</text>		</g>
+		<g id="shape178-149" v:mID="178" v:groupContext="shape" transform="translate(364.961,-344.409)">
+			<title>Tabelle.178</title>
+			<desc>2 vCPU 4GB RAM 30GB disk k3OS 0.9.1</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="38.622" cy="817.795" width="77.25" height="48.189"/>
+			<rect x="0" y="793.701" width="77.2441" height="48.189" class="st24"/>
+			<text x="4" y="802.8" class="st25" v:langID="1031"><v:paragraph/><v:tabList/>2 vCPU<v:newlineChar/><tspan x="4"
+						dy="1.2em" class="st26">4GB RAM<v:newlineChar/></tspan><tspan x="4" dy="1.2em" class="st26">30GB disk<v:newlineChar/></tspan><tspan
+						x="4" dy="1.2em" class="st27">k3OS </tspan>0.9.1</text>		</g>
+		<g id="shape180-155" v:mID="180" v:groupContext="shape" transform="translate(425.197,-493.228)">
+			<title>Tabelle.180</title>
+			<desc>br0</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="21.2598" cy="832.176" width="42.52" height="19.4273"/>
+			<rect x="0" y="822.462" width="42.5197" height="19.4273" class="st24"/>
+			<text x="14.36" y="835.18" class="st25" v:langID="1031"><v:paragraph v:horizAlign="1"/><v:tabList/>br0</text>		</g>
+		<g id="shape203-158" v:mID="203" v:groupContext="shape" transform="translate(230.315,-121.654)">
+			<title>Tabelle.203</title>
+			<desc>Debian 10 Buster Promox VE 6.1</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="51.378" cy="827.717" width="102.76" height="28.3465"/>
+			<rect x="0" y="813.543" width="102.756" height="28.3465" class="st33"/>
+			<text x="4" y="824.12" class="st34" v:langID="1031"><v:paragraph/><v:tabList/>Debian <tspan class="st35">10 Buster<v:newlineChar/></tspan><tspan
+						x="4" dy="1.2em" class="st35">Promox VE 6.1</tspan></text>		</g>
+	</g>
+</svg>
