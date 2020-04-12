@@ -63,11 +63,11 @@ kubectl get all -A
 
 ## 2nd Part: install containerized Jitsi Meet on K3os
 
-
+The [`team-container`][6] project, of German c't magazine issue 9/2020, looks rather promising. It's also based on [k3s][3].
 
 [1]: https://github.com/jitsi/docker-jitsi-meet
 [2]: https://github.com/rancher/k3os
 [3]: https://github.com/rancher/k3s
 [4]: https://www.proxmox.com/en/proxmox-ve
 [5]: https://cloudinit.readthedocs.io/en/latest/
-
+[6]: https://github.com/ct-Open-Source/team-container
