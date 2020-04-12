@@ -63,7 +63,11 @@ kubectl get all -A
 
 ## 2nd Part: install containerized Jitsi Meet on K3os
 
-The [`team-container`][6] project, of German c't magazine issue 9/2020, looks rather promising. It's also based on [k3s][3].
+German computer magazine c't featured the [`team-container`][6] project in it's issue 9/2020. 
+This project implements containerized team apps, like Nextcloud, Rocket.Chat and Jitsi Meet, on a K8s platform.
+c't are using Ubuntu and [k3s][3] as container infrastructure. I would like to use [k3os][2] instead.
+
+
 
 [1]: https://github.com/jitsi/docker-jitsi-meet
 [2]: https://github.com/rancher/k3os
