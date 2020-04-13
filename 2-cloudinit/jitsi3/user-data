@@ -16,6 +16,14 @@ users:
 package_upgrade: true
 
 write_files:
+- path: /etc/environment
+  encoding: ""
+  content: |
+    KUBECONFIG=/etc/rancher/k3s/k3s.yaml
+    HELM_EXPERIMENTAL_OCI=1
+  owner: root
+  permissions: '0644'
+
 - path: /etc/conf.d/qemu-guest-agent
   content: |-
     GA_PATH=/dev/vport2p1
@@ -26,6 +34,8 @@ k3os:
   password: R4ncher
   k3s_args:
   - server
+  - "--write-kubeconfig-mode""
+  - "644""
   - "--cluster-cidr"
   - "10.107.10.0/24"
   - "--service-cidr"
