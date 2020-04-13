@@ -1,0 +1,12 @@
+version: 1
+config:
+    - type: physical
+      name: eth0
+      mac_address: 'c2:a8:5b:5a:fc:30'
+      subnets:
+      - type: dhcp4
+    - type: nameserver
+      address:
+      - '192.168.107.9'
+      search:
+      - 'iot.msd'
