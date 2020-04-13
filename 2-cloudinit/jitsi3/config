@@ -20,6 +20,7 @@ write_files:
   encoding: ""
   content: |
     KUBECONFIG=/etc/rancher/k3s/k3s.yaml
+    K3S_KUBECONFIG_MODE=0644
     HELM_EXPERIMENTAL_OCI=1
   owner: root
   permissions: '0644'
@@ -34,13 +35,13 @@ k3os:
   password: R4ncher
   k3s_args:
   - server
-  - "--write-kubeconfig-mode""
-  - "644""
+  - "--write-kubeconfig-mode"
+  - "644"
   - "--cluster-cidr"
   - "10.107.10.0/24"
   - "--service-cidr"
   - "10.107.11.0/24"
-  - "--disable"
+  - "--no-deploy"
   - "traefik"
-  - "--disable"
+  - "--no-deploy"
   - "metrics-server"
