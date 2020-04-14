@@ -25,6 +25,12 @@ write_files:
   owner: root
   permissions: '0644'
 
+- path: /home/rancher/.profile
+  content: |-
+    set -a ; source /etc/environment ; set +a
+  owner: rancher
+  permissions: '0644'
+
 - path: /etc/conf.d/qemu-guest-agent
   content: |-
     GA_PATH=/dev/vport2p1
