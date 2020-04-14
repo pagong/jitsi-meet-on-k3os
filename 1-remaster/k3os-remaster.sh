@@ -44,7 +44,7 @@ if [ $# -eq 1 ]; then
 	FILENAME="new-$FNAME"
 	echo "Building image to $FILENAME ..."
 else 
-	echo 'Usage: ./k3os-remaster.sh [dirname]'
+	echo 'Usage: ./k3os-remaster.sh [k3os-version].iso'
 	exit 1
 fi
 
