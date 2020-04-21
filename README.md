@@ -106,6 +106,14 @@ jitsi3   Ready    master   6d22h   v1.17.4+k3s1   192.168.1.202   <none>        
 
 ### Set up traefik2 as ingress router
 
+My internet router, a so called `FRITZ!Box` (made by AVM), is working as a NAT gateway.
+Every `FRITZ!Box` owner can apply for a `MyFRITZ!` address, that can be used to access the router from the internet. 
+It's kind of a dynamic DNS service, that can also be used in port forwardings to reach services on the internal LAN.
+`MyFRITZ!` addresses look like `https://0123456789abcdef.myfritz.net/`, where the string `0123456789abcdef` 
+is a place holder for a string of 16 characters, that is unique for each `FRITZ!Box`.
+
+My goal is to reach the internal `k3os` VM by using the address `jitsi3.0123456789abcdef.myfritz.net`.
+
 
 ### Install Jitsi-Meet via helm chart
 
