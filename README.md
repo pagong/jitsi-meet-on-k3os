@@ -23,9 +23,9 @@ Refer to Rancher Labs' [Github repo][2] for documentation on installing and runn
 
 - remaster the K3OS ISO image: adapt `/boot/grub/grub.cfg` for fully automatic installation
 ```
-( cd 1-remaster ; sudo k3os-remaster.sh /path/to/k3os-091-amd64.iso )
+( cd 1-remaster ; sudo k3os-remaster.sh /path/to/k3os-0100-amd64.iso )
 ```
-- copy the remastered ISO `new-k3os-091-amd64.iso` to the image store of the Proxmox VE server
+- copy the remastered ISO `new-k3os-0100-amd64.iso` to the image store of the Proxmox VE server
 - create a customized `cloud-init` CDROM, using https://github.com/pagong/cloudinit-for-k3os
 - please adapt the `user-data` file (aka `config.yaml`) for your environment:
   - at least `hostname`, `password` for user `rancher` and the `ssh` keys should be changed
@@ -37,9 +37,9 @@ Refer to Rancher Labs' [Github repo][2] for documentation on installing and runn
 
 ### Create a Proxmox VM for K3os
 
-- create a new VM with at least 1 vCPU, 2 GB of memory and a 10 GB SCSI disk (`/dev/sda`)
+- create a new VM with at least 2 vCPU, 3 GB of memory and a 20 GB SCSI disk (`/dev/sda`)
 - a virtual network card with access to a DHCP server and the internet is also recommended
-- add 2 CDROM drives: 1st is for `new-k3os-0921-amd64.iso`, 2nd is for `cidata-jitsi3.iso`
+- add 2 CDROM drives: 1st is for `new-k3os-0100-amd64.iso`, 2nd is for `cidata-jitsi3.iso`
 - remember to enable the option `QEMU Guest Agent`
 - power on the VM and watch the fully automatic installation
 
@@ -63,10 +63,31 @@ kubectl get all -A
 
 ## 2nd Part: install containerized Jitsi Meet on K3os
 
-German computer magazine c't featured the [`team-container`][6] project in it's issue 9/2020. 
-This project implements containerized team apps, like Nextcloud, Rocket.Chat and Jitsi Meet, on a K8s platform.
+German computer magazine c't featured the [`team-container`][6] project in it's issue [9/2020][7]. 
+This project implements containerized team apps, like Nextcloud, Rocket.Chat and Jitsi Meet, on a Kubernetes platform.
 c't are using Ubuntu and [k3s][3] as container infrastructure. I would like to use [k3os][2] instead.
 
+
+### First impressions
+
+Parts of the `install.sh` script of the c't project have been integrated into the `user-data` file for `jitsi3`.
+
+The download and installation of `helm3` does not work on `k3os`. 
+Some small modifications to the downloaded helm3 installer script are needed:
+```
+diff helm3-installer.sh-orig helm3-installer.sh-new
+--- helm3-installer.sh-orig
++++ helm3-installer.sh-new
+@@ -131,7 +131,7 @@
+ # installs it.
+ installFile() {
+   HELM_TMP="$HELM_TMP_ROOT/$BINARY_NAME"
+-  local sum=$(openssl sha1 -sha256 ${HELM_TMP_FILE} | awk '{print $2}')
++  local sum=$(sha256sum ${HELM_TMP_FILE} | awk '{print $1}')
+   local expected_sum=$(cat ${HELM_SUM_FILE})
+   if [ "$sum" != "$expected_sum" ]; then
+     echo "SHA sum of ${HELM_TMP_FILE} does not match. Aborting."
+```
 
 
 [1]: https://github.com/jitsi/docker-jitsi-meet
@@ -75,3 +96,4 @@ c't are using Ubuntu and [k3s][3] as container infrastructure. I would like to u
 [4]: https://www.proxmox.com/en/proxmox-ve
 [5]: https://cloudinit.readthedocs.io/en/latest/
 [6]: https://github.com/ct-Open-Source/team-container
+[7]: https://www.heise.de/select/ct/2020/9/2007712573850503640
