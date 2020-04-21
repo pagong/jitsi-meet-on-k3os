@@ -71,9 +71,10 @@ c't are using Ubuntu and [k3s][3] as container infrastructure. I would like to u
 ### First impressions
 
 Parts of the `install.sh` script of the c't project have been integrated into the `user-data` file for `jitsi3`.
+Installation of `k3s` is not needed, as `k3os` has already been bundled with `k3s`.
 
-The download and installation of `helm3` does not work on `k3os`. 
-Some small modifications to the downloaded helm3 installer script are needed:
+The downloaded installation script of `helm3` does not work on `k3os`. 
+Some small modifications to the installer script are needed:
 ```
 diff helm3-installer.sh-orig helm3-installer.sh-new
 --- helm3-installer.sh-orig
