@@ -89,6 +89,26 @@ diff helm3-installer.sh-orig helm3-installer.sh-new
      echo "SHA sum of ${HELM_TMP_FILE} does not match. Aborting."
 ```
 
+With this modification to the installer script, `helm3` can be installed on `k3os`.
+```
+jitsi3 [~]$ which helm
+/usr/local/bin/helm
+
+jitsi3 [~]$ helm version
+version.BuildInfo{Version:"v3.1.2", GitCommit:"d878d4d45863e42fd5cff6743294a11d28a9abce", GitTreeState:"clean", GoVersion:"go1.13.8"}
+
+jitsi3 [~]$ kubectl get nodes -o wide
+NAME     STATUS   ROLES    AGE     VERSION        INTERNAL-IP     EXTERNAL-IP   OS-IMAGE       KERNEL-VERSION     CONTAINER-RUNTIME
+jitsi3   Ready    master   6d22h   v1.17.4+k3s1   192.168.1.202   <none>        k3OS v0.10.0   5.0.0-43-generic   containerd://1.3.3-k3s2
+```
+
+
+### Set up traefik2 as ingress router
+
+
+### Install Jitsi-Meet via helm chart
+
+
 
 [1]: https://github.com/jitsi/docker-jitsi-meet
 [2]: https://github.com/rancher/k3os
