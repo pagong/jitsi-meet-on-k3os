@@ -1,0 +1,45 @@
+#cloud-config
+
+hostname: k3os-0100-a
+manage_etc_hosts: true
+fqdn: k3os-0100-a.iot.msd
+
+user: rancher
+password: $5$VOxAb6v7$AXGlBNk.2.2hsw9CTYTH2NLWmTfvoNvqm1RLAVg1dj7
+ssh_pwauth: True
+ssh_authorized_keys:
+  - ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAqdFNDz9kOqgj4yOFkFL29eCHWHYJBhnQ8ChiY9m9Je++rwWb5JuD2x4V7H2cUvMkjea7iXU8XPrfNTP5FR/DJk18wuod3u3xEPAILke1RfKQpA/R1PMlvgazOOTCn8blJFVoYEKcFoF3c/bkIEMXMI9G/EMwaN6Wpe2rTmFNaBIQfv6/c3kirEn31AMbxIrrRROinG9xGSyoakz+HXqik1KA0m6MgWUNulFlNGwCQZfMnmiDoDAr5R0Q7/pCDx7HXRs9S1JRlQMQ3uvK15VWMlqo020rj+FgMusCYqjq2afR/5JM/PGokDV22zdVlrAgb+cQIlwgyDgwWq3s1qaA0Q== rsa-key-200402-msd2
+chpasswd:
+  expire: False
+users:
+  - default
+package_upgrade: true
+
+write_files:
+- path: /etc/environment
+  encoding: ""
+  content: |
+    KUBECONFIG=/etc/rancher/k3s/k3s.yaml
+    K3S_KUBECONFIG_MODE=0644
+  owner: root
+  permissions: '0644'
+
+- path: /home/rancher/.profile
+  content: |-
+    set -a ; source /etc/environment ; set +a
+  owner: rancher
+  permissions: '0644'
+
+- path: /etc/conf.d/qemu-guest-agent
+  content: |-
+    GA_PATH=/dev/vport2p1
+  owner: root
+  permissions: '0644'
+
+k3os:
+  password: R4ncher
+  k3s_args:
+  - server
+  - "--write-kubeconfig-mode=644"
+  - "--cluster-cidr=10.107.14.0/24"
+  - "--service-cidr=10.107.15.0/24"
