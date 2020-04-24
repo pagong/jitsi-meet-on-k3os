@@ -66,7 +66,7 @@ kubectl get all -A
 
 ## 2nd Part: install containerized Jitsi Meet on K3os
 
-<img src="media/Container-05.png" width="50%" height="50%"/>
+<img src="media/Container-06.png" width="50%" height="50%"/>
 
 German computer magazine c't featured the [`team-container`][6] project in it's issue [9/2020][7]. 
 This project implements containerized team apps, like Nextcloud, Rocket.Chat and Jitsi Meet, on a Kubernetes platform.
