@@ -9,9 +9,12 @@ all inside the KVM based open-source virtualization platform [Proxmox VE 6.1][4]
 
 We want to create a virtual machine (VM) using the KVM hypervisor of Proxmox, without using any manual steps.
 
+<img src="media/Proxmox-Jitsi-02.svg" width="50%" height="50%"/>
+
 In oder to accomplish this, we need a customized version of the K3os ISO image, 
 that does not ask any questions during installation.
 For each new version of K3os, this remastered ISO image needs to be created only once.
+
 With [`cloud-init`][5] technology, it is possible to inject unique configuration data (aka `config.yaml`) 
 into the fully automatic installation process of a K3os VM.
 So for each K3os instance, that we want to create, a separate `cloud-init` CDROM (ISO image) needs to be built.
@@ -62,6 +65,8 @@ kubectl get all -A
 
 
 ## 2nd Part: install containerized Jitsi Meet on K3os
+
+<img src="media/Container-05.png" width="50%" height="50%"/>
 
 German computer magazine c't featured the [`team-container`][6] project in it's issue [9/2020][7]. 
 This project implements containerized team apps, like Nextcloud, Rocket.Chat and Jitsi Meet, on a Kubernetes platform.
