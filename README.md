@@ -70,10 +70,16 @@ kubectl get all -A
 
 German computer magazine c't featured the [`team-container`][6] project in it's issue [9/2020][7]. 
 This project implements containerized team apps, like Nextcloud, Rocket.Chat and Jitsi Meet, on a Kubernetes platform.
-c't are using Ubuntu and [k3s][3] as container infrastructure. I would like to use [k3os][2] instead.
+c't are using Ubuntu and [k3s][3] as container infrastructure. 
+
+However, I would like to use [k3os][2] instead.
+In order to have a separate workspace, I've cloned the relevant part of the c't repository to directory `3-jitsi-meet`.
+And we are going to explore the c't code in there.
 
 
 ### First impressions
+
+Analysis of `3-jitsi-meet/install.sh`:
 
 Installation of `k3s` is not needed, as `k3os` comes already bundled with `k3s`.
 And some parts of the `install.sh` script of the c't project can be integrated into the `user-data` file for `jitsi3`.
@@ -109,15 +115,43 @@ jitsi3   Ready    master   6d22h   v1.17.4+k3s1   192.168.1.202   <none>        
 ```
 
 
-### Set up traefik2 as ingress router
+### Set up Traefik2 as ingress router
 
 My internet router, a so called `FRITZ!Box` (made by AVM), is working as a NAT gateway.
+Thus the following ports need to be forwarded from the `FRITZ!Box` to the `k3os` VM.
+
+![](media/jitsi3-ports.png)
+
 Every `FRITZ!Box` owner can apply for a `MyFRITZ!` address, that can be used to access the router from the internet. 
 It's kind of a dynamic DNS service, that can also be used in port forwardings to reach services on the internal LAN.
 `MyFRITZ!` addresses look like `https://0123456789abcdef.myfritz.net/`, where the string `0123456789abcdef` 
 is a place holder for a string of 16 characters, that is unique for each `FRITZ!Box`.
 
 My goal is to reach the internal `k3os` VM by using the address `jitsi3.0123456789abcdef.myfritz.net`.
+As we don't have control over the DNS domain `0123456789abcdef.myfritz.net`, it is not possible 
+to get a Let's Encrypt certificate for a wildcard domain.
+
+So, here comes [`Traefik2`][8] to our rescue. 
+By using `Middlewares` like `stripprefix`, it is possible to change the c't code from fqdn-based routing to path-based routing.
+
+Add this `Middleware` to file `3-jitsi-meet/team-setup/templates/ingress/06-middleware.yaml`:
+
+Change a few lines in  file `3-jitsi-meet/team-setup/templates/landingpage/ingress.yaml`:
+
+And configure the file `3-setup-jitsi/values-setup.yaml`:
+```
+acme:
+  mail: erika.mustermann@t-online.de
+  production: true
+app:
+  name: jitsi3
+  domain: 0123456789abcdef.myfritz.net
+```
+
+Finally, you can start the `Traefik2` router by issuing the command
+```
+( cd 3-jitsi-meet ; helm install --debug setup team-setup --values values-setup.yaml )
+```
 
 
 ### Install Jitsi-Meet via helm chart
@@ -131,3 +165,4 @@ My goal is to reach the internal `k3os` VM by using the address `jitsi3.01234567
 [5]: https://cloudinit.readthedocs.io/en/latest/
 [6]: https://github.com/ct-Open-Source/team-container
 [7]: https://www.heise.de/select/ct/2020/9/2007712573850503640
+[8]: https://docs.traefik.io/migration/v1-to-v2/#strip-and-rewrite-path-prefixes
