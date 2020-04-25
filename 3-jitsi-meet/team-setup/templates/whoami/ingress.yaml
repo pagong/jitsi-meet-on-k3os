@@ -2,20 +2,20 @@
 apiVersion: traefik.containo.us/v1alpha1
 kind: IngressRoute
 metadata:
-  name: ingressroute-landingpage
+  name: ingressroute-whoami
   namespace: default
 spec:
   entryPoints:
     - websecure
   routes:
-    - match: Host(`{{ .Values.app.name }}.{{ .Values.app.domain }}`) && Path(`/web`)
+    - match: Host(`{{ .Values.app.name }}.{{ .Values.app.domain }}`) && Path(`/who`)
       kind: Rule
       priority: 1
       services:
-        - name: landingpage
+        - name: whoami
           port: 80
       middlewares:
-        - name: web-stripprefix
+        - name: who-stripprefix
         - name: traefik-middlewares
   tls:
     certResolver: default

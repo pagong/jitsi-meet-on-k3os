@@ -156,6 +156,7 @@ Finally, you can start the `Traefik2` router by issuing the command
 
 ### Install Jitsi-Meet via helm chart
 
+Hint: use command `openssl rand -base64 15` to generate random strings for secrets and endpoints.
 
 
 [1]: https://github.com/jitsi/docker-jitsi-meet

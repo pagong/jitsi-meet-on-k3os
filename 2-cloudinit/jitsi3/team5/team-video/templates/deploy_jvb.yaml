@@ -1,0 +1,56 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  namespace: default
+  name: {{ include "team-video.fullname" . }}-jvb
+  labels:
+    app: {{ include "team-video.fullname" . }}-jvb
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: {{ include "team-video.fullname" . }}-jvb
+  template:
+    metadata:
+      labels:
+        app: {{ include "team-video.fullname" . }}-jvb
+      annotations:
+        timestamp: "{{ now | unixEpoch }}"
+    spec:
+      containers:
+       - name: jvb
+         image: jitsi/jvb
+         ports:
+         - containerPort: 30000
+           protocol: UDP
+         - containerPort: 30001
+         resources: {}
+         env:
+          - name: XMPP_SERVER
+            value: {{ include "team-video.fullname" . }}-prosody
+          - name: DOCKER_HOST_ADDRESS
+            valueFrom:
+              fieldRef:
+                fieldPath: status.hostIP
+          - name: XMPP_DOMAIN
+            value: {{ .Values.app.name }}.{{ .Values.app.domain }}
+          - name: XMPP_AUTH_DOMAIN
+            value: auth.{{ .Values.app.name }}.{{ .Values.app.domain }}
+          - name: JVB_PORT
+            value: "30000"
+          - name: JVB_TCP_PORT
+            value: "30001"
+          - name: JVB_AUTH_USER
+            value: jvb
+          - name: JVB_AUTH_PASSWORD
+            value: {{ .Values.secrets.jvb.auth }}
+          - name: JVB_BREWERY_MUC
+            value: jvbbrewery
+          - name: XMPP_INTERNAL_MUC_DOMAIN
+            value: internal-muc.{{ .Values.app.name }}.{{ .Values.app.domain }}
+          - name: JVB_STUN_SERVERS
+            value: stun.l.google.com:19302,stun1.l.google.com:19302,stun2.l.google.com:19302
+          - name: JICOFO_AUTH_USER
+            value: focus
+          - name: TZ
+            value: Europe/Paris
