@@ -2,5 +2,5 @@ acme:
   mail: erika.mustermann@t-online.de
   production: true
 app:
-  name: jitsi3
-  domain: 0123456789abcdef.myfritz.net
+  name: www
+  domain: teams.my-wan.de
