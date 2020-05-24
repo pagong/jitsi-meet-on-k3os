@@ -1,9 +1,25 @@
 app:
   name: video
   domain: example.org
+  pullpolicy: IfNotPresent
 
-# hint: use `openssl rand -base64 15`
-# to generate random secrets and endpoints
+auth:
+  enabled: false
+  guests: true
+  type: "internal"
+  admin:
+    user: admin
+    password: "jitsiAdmin"
+
+logLevel: "info"
+hideWelcomePage: true
+
+stun:
+  server:
+
+# optional changes below this line.
+#  hint: use `openssl rand -base64 15`
+#  to generate random secrets and endpoints
 secrets:
   jvb:
     component: "i1IlhGQXt/eS61BpGckT"
