@@ -68,7 +68,7 @@ kubectl get all -A
 
 <img src="media/Container-06.png" width="50%" height="50%"/>
 
-German computer magazine c't featured the [`team-container`][6] project in it's issue [9/2020][7] and [12/2020][8]. 
+German computer magazine c't featured the [`team-container`][6] project in it's issues [9/2020][7] and [12/2020][8]. 
 This project implements containerized team apps, like Nextcloud, Rocket.Chat and Jitsi Meet, on a Kubernetes platform.
 c't are using Ubuntu and [k3s][3] as container infrastructure. 
 
@@ -134,11 +134,58 @@ to get a Let's Encrypt certificate for a wildcard domain.
 So, here comes [`Traefik2`][9] to our rescue. 
 By using `Middlewares` like `stripprefix`, it is possible to change the c't code from fqdn-based routing to path-based routing.
 
-Add this `Middleware` to file `3-jitsi-meet/team-setup/templates/ingress/06-middleware.yaml`:
+Add these `Middleware` to file `3-jitsi-meet/team-setup/templates/ingress/06-middleware.yaml`:
+```
+---
+# strip prefix "/web"
+apiVersion: traefik.containo.us/v1alpha1
+kind: Middleware
+metadata:
+  name: web-stripprefix
+spec:
+  stripPrefix:
+    prefixes:
+      - /web
+---
+# strip prefix "/who"
+apiVersion: traefik.containo.us/v1alpha1
+kind: Middleware
+metadata:
+  name: who-stripprefix
+spec:
+  stripPrefix:
+    prefixes:
+      - /who
+```
 
-Change a few lines in  file `3-jitsi-meet/team-setup/templates/landingpage/ingress.yaml`:
+Change a few lines in file `3-jitsi-meet/team-setup/templates/landingpage/ingress.yaml`:
+```
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: ingressroute-landingpage
+  namespace: default
+spec:
+  entryPoints:
+    - websecure
+  routes:
+    - match: Host(`{{ .Values.app.name }}.{{ .Values.app.domain }}`) && Path(`/web`)
+      kind: Rule
+      priority: 1
+      services:
+        - name: landingpage
+          port: 80
+      middlewares:
+        - name: web-stripprefix
+        - name: traefik-middlewares
+  tls:
+    certResolver: default
+```
 
-And configure the file `3-jitsi-meet/values-setup.yaml`:
+Create directory `3-jitsi-meet/team-setup/templates/whoami` and add 3 files:
+`ingress.yaml`, `service.yaml` and `whoami.yaml`.
+
+Then configure the file `3-jitsi-meet/values-setup.yaml`:
 ```
 acme:
   mail: erika.mustermann@t-online.de
@@ -168,3 +215,4 @@ Hint: use command `openssl rand -base64 15` to generate random strings for secre
 [7]: https://www.heise.de/select/ct/2020/9/2007712573850503640
 [8]: https://www.heise.de/select/ct/2020/12/2011112595746278280
 [9]: https://docs.traefik.io/migration/v1-to-v2/#strip-and-rewrite-path-prefixes
+
