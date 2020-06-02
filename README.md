@@ -167,4 +167,4 @@ Hint: use command `openssl rand -base64 15` to generate random strings for secre
 [6]: https://github.com/ct-Open-Source/team-container
 [7]: https://www.heise.de/select/ct/2020/9/2007712573850503640
 [8]: https://www.heise.de/select/ct/2020/12/2011112595746278280
-[8]: https://docs.traefik.io/migration/v1-to-v2/#strip-and-rewrite-path-prefixes
+[9]: https://docs.traefik.io/migration/v1-to-v2/#strip-and-rewrite-path-prefixes
