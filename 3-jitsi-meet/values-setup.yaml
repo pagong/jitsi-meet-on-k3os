@@ -4,3 +4,8 @@ acme:
 app:
   name: www
   domain: teams.my-wan.de
+ddns:
+  checkip: http://checkip.twodns.de/
+  update: update.twodns.de
+  user: erika.mustermann@t-online.de
+  auth: "My-S3cr3t-Passw0rd"
