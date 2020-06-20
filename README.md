@@ -142,14 +142,41 @@ Instead I'm now using a free, dynamic DNS provider [`twodns.de`][10] that also o
 
 Let's assume that I've enabled the wildcard feature while creating the DDNS domain `teams.my-wan.de` at [`twodns.de`][10].
 This way we can use `www.teams.my-wan.de` for the `team-setup` part of the [`team-container`][6] project.
-And we can use the address `meet.teams.my-wan.de` for `team-video` part.
-Similar addresses can be used, if we want to enable some of the additional features of the c' project.
+And we can use the address `meet.teams.my-wan.de` for the `team-video` part.
+Similar addresses can be used, if we want to enable some of the additional features of the c't project.
 
 #### Set up a ddclient pod for automatic DDNS updates
 
+[`Ddclient`][13] is a popular [Perl script][14] that regularly checks the external WAN IP of a home network. 
+If this IP address changes, the A record of your dynamic DNS provider can be automatically updated.
+In a recent [blog post][11] Jocye Lin has written about how to "Set up a free Dynamic DNS service with ddclient on Kubernetes".
+Her code can be found at [kubesail.com][12]. She made a K8s deployment manifest for a `ddclient` container.
+And the data for the usual `ddclient.conf` file has been put into a K8s secret.
 
-
-Then configure the file `3-jitsi-meet/values-setup.yaml`:
+I've put both resources into the folder `3-jitsi-meet/team-setup/templates/ddclient/` and added some `Helm` templating magic 
+to the files `3-jitsi-meet/team-setup/templates/ddclient/secret.yaml`: 
+```
+apiVersion: v1
+kind: Secret
+metadata:
+  name: ddclient-secret
+  labels:
+    app: ddclient
+stringData:
+  ddclient.conf: |
+    daemon=300
+    syslog=yes
+    ssl=yes
+    protocol=dyndns2
+    use=web
+    web=http://checkip.twodns.de/
+    web-skip='IP Address'
+    server=update.twodns.de
+    login=erika.mustermann@t-online.de
+    password='My-S3cr3t-Passw0rd'
+    teams.my-wan.de
+```
+and `3-jitsi-meet/values-setup.yaml`:
 ```
 acme:
   mail: erika.mustermann@t-online.de
@@ -158,10 +185,10 @@ app:
   name: www
   domain: teams.my-wan.de
 ddns:
-  checkip:
-  update:
-  user:
-  auth:
+  checkip: http://checkip.twodns.de/
+  update: update.twodns.de
+  user: erika.mustermann@t-online.de
+  auth: 'My-S3cr3t-Passw0rd'
 ```
 
 Finally, you can start the `Traefik2` router by issuing the command
