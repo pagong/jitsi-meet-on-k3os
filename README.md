@@ -136,9 +136,9 @@ By using `Middlewares` like `stripprefix`, it is possible to change the c't code
 
 However, this is not enough. Jitsi Meet cannot be easily converted to use path-based routing.
 Thats's why I've given up on using the `MyFRITZ!` DDNS service.
-Instead I'm now using a free, dynamic DNS provider [`twodns.de`][10] that also offers wildcard domains for up to 5 hosts.
+Instead, I'm now using a free, dynamic DNS provider [`twodns.de`][10] that also offers wildcard domains for up to 5 hosts.
 
-#### Set up DDNS with wildcard domains
+#### Set up Dynamic DNS with wildcard domains
 
 Let's assume that I've enabled the wildcard feature while creating the DDNS domain `teams.my-wan.de` at [`twodns.de`][10].
 This way we can use `www.teams.my-wan.de` for the `team-setup` part of the [`team-container`][6] project.
@@ -147,8 +147,10 @@ Similar addresses can be used, if we want to enable some of the additional featu
 
 #### Set up a ddclient pod for automatic DDNS updates
 
-[`Ddclient`][13] is a popular [Perl script][14] that regularly checks the external WAN IP of a home network. 
-If this IP address changes, the A record of your dynamic DNS provider can be automatically updated.
+[`Ddclient`][13] is a popular Perl script that regularly checks the external WAN IP of a home network. 
+If this IP address changes, [`ddclient`][14] can automatically update the A record of your dynamic DNS provider.
+In a cloud-native project like this, we want to run `ddclient` as a container in a K8s pod, as well.
+
 In a recent [blog post][11] Jocye Lin has written about how to "Set up a free Dynamic DNS service with ddclient on Kubernetes".
 Her code can be found at [kubesail.com][12]. She made a K8s deployment manifest for a `ddclient` container.
 And the data for the usual `ddclient.conf` file has been put into a K8s secret.
