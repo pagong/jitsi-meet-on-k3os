@@ -2,7 +2,7 @@
 
 Scripts and tools to accomplish automated installations of [Jitsi Meet][1] with [k3os][2]
 (Rancher Labs' tiny Kubernetes distribution [k3s][3] on a bespoke operating system), 
-all inside the KVM based open-source virtualization platform [Proxmox VE 6.1][4].
+all inside the KVM based open-source virtualization platform [Proxmox VE 6.2][4].
 
 
 ## 1st Part: install K3os on a Proxmox VM
@@ -134,6 +134,20 @@ to get a Let's Encrypt certificate for a wildcard domain.
 So, here comes [`Traefik2`][9] to our rescue. 
 By using `Middlewares` like `stripprefix`, it is possible to change the c't code from fqdn-based routing to path-based routing.
 
+However, this is not enough. Jitsi Meet cannot be easily converted to use path-based routing.
+Thats's why I've given up on using the `MyFRITZ!` DDNS service.
+Instead I'm now using a free, dynamic DNS provider [`twodns.de`][10] that also offers wildcard domains for up to 5 hosts.
+
+#### Set up DDNS with wildcard domains
+
+Let's assume that I've enabled the wildcard feature while creating the DDNS domain `teams.my-wan.de` at [`twodns.de`][10].
+This way we can use `www.teams.my-wan.de` for the `team-setup` part of the [`team-container`][6] project.
+And we can use the address `meet.teams.my-wan.de` for `team-video` part.
+Similar addresses can be used, if we want to add enable some of the other features of the c' project.
+
+#### Set up a ddclient pod for automatic DDNS updates
+
+
 Add these `Middleware` to file `3-jitsi-meet/team-setup/templates/ingress/06-middleware.yaml`:
 ```
 ---
@@ -215,4 +229,4 @@ Hint: use command `openssl rand -base64 15` to generate random strings for secre
 [7]: https://www.heise.de/select/ct/2020/9/2007712573850503640
 [8]: https://www.heise.de/select/ct/2020/12/2011112595746278280
 [9]: https://docs.traefik.io/migration/v1-to-v2/#strip-and-rewrite-path-prefixes
-
+[10]: https://www.twodns.de/de
