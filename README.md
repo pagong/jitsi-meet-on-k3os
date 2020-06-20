@@ -171,12 +171,12 @@ stringData:
     ssl=yes
     protocol=dyndns2
     use=web
-    web=http://checkip.twodns.de/
+    web={{ .Values.ddns.checkip }}
     web-skip='IP Address'
-    server=update.twodns.de
-    login=erika.mustermann@t-online.de
-    password='My-S3cr3t-Passw0rd'
-    teams.my-wan.de
+    server={{ .Values.ddns.update }}
+    login={{ .Values.ddns.user }}
+    password="{{ .Values.ddns.auth }}"
+    {{ .Values.app.domain }}
 ```
 and `3-jitsi-meet/values-setup.yaml`:
 ```
@@ -190,7 +190,7 @@ ddns:
   checkip: http://checkip.twodns.de/
   update: update.twodns.de
   user: erika.mustermann@t-online.de
-  auth: 'My-S3cr3t-Passw0rd'
+  auth: "My-S3cr3t-Passw0rd"
 ```
 
 Finally, you can start the `Traefik2` router by issuing the command
