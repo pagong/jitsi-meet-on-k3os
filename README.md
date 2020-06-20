@@ -153,7 +153,7 @@ In a cloud-native project like this, we want to run `ddclient` as a container in
 
 In a recent [blog post][11] Jocye Lin has written about how to "Set up a free Dynamic DNS service with ddclient on Kubernetes".
 Her code can be found at [kubesail.com][12]. She made a K8s deployment manifest for a `ddclient` container.
-And the data for the usual `ddclient.conf` file has been put into a K8s secret.
+And the config data for the usual `ddclient.conf` file has been put into a K8s secret.
 
 I've put both resources into the folder `3-jitsi-meet/team-setup/templates/ddclient/` and added some `Helm` templating magic 
 to the files `3-jitsi-meet/team-setup/templates/ddclient/secret.yaml`: 
