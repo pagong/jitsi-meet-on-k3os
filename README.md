@@ -143,61 +143,11 @@ Instead I'm now using a free, dynamic DNS provider [`twodns.de`][10] that also o
 Let's assume that I've enabled the wildcard feature while creating the DDNS domain `teams.my-wan.de` at [`twodns.de`][10].
 This way we can use `www.teams.my-wan.de` for the `team-setup` part of the [`team-container`][6] project.
 And we can use the address `meet.teams.my-wan.de` for `team-video` part.
-Similar addresses can be used, if we want to add enable some of the other features of the c' project.
+Similar addresses can be used, if we want to enable some of the additional features of the c' project.
 
 #### Set up a ddclient pod for automatic DDNS updates
 
 
-Add these `Middleware` to file `3-jitsi-meet/team-setup/templates/ingress/06-middleware.yaml`:
-```
----
-# strip prefix "/web"
-apiVersion: traefik.containo.us/v1alpha1
-kind: Middleware
-metadata:
-  name: web-stripprefix
-spec:
-  stripPrefix:
-    prefixes:
-      - /web
----
-# strip prefix "/who"
-apiVersion: traefik.containo.us/v1alpha1
-kind: Middleware
-metadata:
-  name: who-stripprefix
-spec:
-  stripPrefix:
-    prefixes:
-      - /who
-```
-
-Change a few lines in file `3-jitsi-meet/team-setup/templates/landingpage/ingress.yaml`:
-```
-apiVersion: traefik.containo.us/v1alpha1
-kind: IngressRoute
-metadata:
-  name: ingressroute-landingpage
-  namespace: default
-spec:
-  entryPoints:
-    - websecure
-  routes:
-    - match: Host(`{{ .Values.app.name }}.{{ .Values.app.domain }}`) && Path(`/web`)
-      kind: Rule
-      priority: 1
-      services:
-        - name: landingpage
-          port: 80
-      middlewares:
-        - name: web-stripprefix
-        - name: traefik-middlewares
-  tls:
-    certResolver: default
-```
-
-Create directory `3-jitsi-meet/team-setup/templates/whoami` and add 3 files:
-`ingress.yaml`, `service.yaml` and `whoami.yaml`.
 
 Then configure the file `3-jitsi-meet/values-setup.yaml`:
 ```
@@ -205,8 +155,13 @@ acme:
   mail: erika.mustermann@t-online.de
   production: true
 app:
-  name: jitsi3
-  domain: 0123456789abcdef.myfritz.net
+  name: www
+  domain: teams.my-wan.de
+ddns:
+  checkip:
+  update:
+  user:
+  auth:
 ```
 
 Finally, you can start the `Traefik2` router by issuing the command
@@ -230,3 +185,8 @@ Hint: use command `openssl rand -base64 15` to generate random strings for secre
 [8]: https://www.heise.de/select/ct/2020/12/2011112595746278280
 [9]: https://docs.traefik.io/migration/v1-to-v2/#strip-and-rewrite-path-prefixes
 [10]: https://www.twodns.de/de
+[11]: https://medium.com/@joycelin.codes/ddclient-c9a6ac1d8f81
+[12]: https://kubesail.com/template/loopDelicious/ddclient
+[13]: https://ddclient.net/
+[14]: https://github.com/ddclient/ddclient
+
